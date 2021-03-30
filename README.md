@@ -10,3 +10,5 @@ unescape 命令： tool unescape  file.txt reserved_chars
 加分项：
 1. 编码后的文件越短越好
 2. 代码复杂度越低越好
+
+## 基于霍夫曼编码对文本进行压缩/解压缩
