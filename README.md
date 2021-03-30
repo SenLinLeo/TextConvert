@@ -1,7 +1,7 @@
 ## 小作业：实现一个编解码工具，对纯文本文件进行 escape/unescape。
 
-escape 命令： tool escape   file.txt reserved_chars
-unescape 命令： tool unescape  file.txt reserved_chars
+#### 1. escape   命令： tool escape   file.txt reserved_chars
+#### 2. unescape 命令： tool unescape  file.txt reserved_chars
 
 要求：
 1. escape 之后不含有 reserved_chars 中的任何字符，且不向文件添加原来没有的字符
