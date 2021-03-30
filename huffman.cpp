@@ -23,7 +23,7 @@ typedef struct Huffchar {
     struct Hufftree* self;
 } Huffchar;
 
-/** 哈夫曼树节点 **/
+/** 哈夫曼树节点 动态（静态）数组描述Huffman树 **/
 typedef struct Hufftree {
     char character;	          // 节点字符信息
     int power;		          // 权值
@@ -31,7 +31,7 @@ typedef struct Hufftree {
     struct Hufftree* rchild;
     struct Hufftree* lchild;  // 自身地址，左右孩子
 
-} Hufftree;                   // 动态（静态）数组描述Huffman树
+} Hufftree; 
 
 void buildTree(Huffchar chartype[]);
 void dfs(Hufftree * Head, int lev);
