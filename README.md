@@ -1,20 +1,14 @@
-# huffman
+## 小作业：实现一个编解码工具，对纯文本文件进行 escape/unescape。
 
-[![Build Status](https://travis-ci.org/drichardson/huffman.svg?branch=master)](https://travis-ci.org/drichardson/huffman)
+escape 命令： tool escape   file.txt reserved_chars
+unescape 命令： tool unescape  file.txt reserved_chars
 
-A huffman coding library and command line interface to the library. The encoder is a 2 pass encoder. The first pass generates a huffman tree and the second pass encodes the data. The decoder is one pass and uses a huffman code table at the beginning of the compressed file to decode the data.
+要求：
+1. escape 之后不含有 reserved_chars 中的任何字符，且不向文件添加原来没有的字符
+2. 对于不同的文件内容以及 reserved_chars，尽量覆盖所有 corner case (包括无法 escape 的情况)
 
-libhuffman has functions for encoding and decoding both files and memory.
+加分项：
+1. 编码后的文件越短越好
+2. 代码复杂度越低越好
 
-To build, run:
-
-    make
-
-To run unit tests, run:
-
-    make check
-
-To run unit tests under valgrind, run:
-
-    make valgrind_check
-
+## 基于霍夫曼编码对文本进行压缩/解压缩
